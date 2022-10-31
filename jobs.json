@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Save Hyrule",
+    "description": "Looking for somebody to come save the day! Please there are monsters all over place",
+    "benefits": ["Unlimited breakable pots", "Gems", "other sidequests"],
+    "email": "Lordof@Hyrule.gov"
+  },
+  {
+    "title": "Mushroom Kingdom is under attack!",
+    "description": "I've never seen so many GOombas",
+    "benefits": ["Mushrooms", "Coins", "Fire Flowers"],
+    "email": "MrToad@MushroomKingdom.gov"
+  },
+  {
+    "title": "Fighters Needed for Tournament ",
+    "description": "Do you think you have what it takes to be the champions? Sign up and be ready to fight to the death in MORTALL KOMBAT!",
+    "benefits": [
+      "Fighting to the death",
+      "Ripping hearts out of chests",
+      "Very realistic graphics"
+    ],
+    "email": "ShaoKahn@yahoo.com"
+  },
+  {
+    "title": "Secret Agent Wanted",
+    "description": "Looking for a secret stealth agent to investiage a terrorist group called 'The Shadows', also find out what the arms-dealing organization named 'The Shop' are up too.",
+    "benefits": ["Saving the world", "Get to be Sneaky", "Wear cool tech"],
+    "email": "IrvingLambert@ThirdEchelon.net"
+  },
+  {
+    "title": "Aspiring mutant or true-kin",
+    "description": "Explore cavernous depths. Must be willing to occasionally avoid extradimensional psychic assasins.",
+    "benefits": [
+      "Pay grade: 5-10 drams of water",
+      "Ok with fungal infections",
+      "explore tombs"
+    ],
+    "email": "MayorOf@Qud.cave"
+  }
+]
