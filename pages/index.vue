@@ -79,3 +79,10 @@ export default {
 }
 </script>
 
+<style>
+
+.moving-card {
+  @apply border opacity-50 border-green-500 bg-gray-200
+}
+</style>
+
