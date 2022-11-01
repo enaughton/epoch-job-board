@@ -13,14 +13,6 @@ export default {
     },
   },
 
-  methods: {
-    onEdit(job) {
-      alert(`editing ${job.title}`)
-    },
-    onDelete(job) {
-      alert(`Deleting ${job.title}`)
-    },
-  },
 }
 </script>
 
@@ -31,39 +23,39 @@ export default {
       p-4
       mb-3
       flex
-      justify-between
-      items-center
       bg-white
       shadow
       rounded-lg
       cursor-move
     "
   >
-    <div class="flex items-center">
-      <p class="ml-2 text-gray-700 font-semibold font-sans tracking-wide">
-        {{ job.title }}
-      </p>
-    </div>
-    <div class="flex">
-      <button
-        aria-label="Edit user"
-        class="
-          p-1
-          focus:outline-none focus:shadow-outline
-          text-teal-500
-          hover:text-teal-600
-        "
-        @click="onEdit(job)"
+
+
+    <div
+
+      class="p-4 bg-white sm:rounded-lg hover:bg-green-200"
+    >
+      <div class="flex flex-row gap-8 p-4">
+        <h2 class="text-2xl font-semibold leading-7">{{ job.title }}</h2>
+      </div>
+      <p>{{ job.description }}</p>
+      <ul class="p-4">
+        <li v-for="item in job.benefits" :key="item" class="list-disc">
+          {{ item }}
+        </li>
+      </ul>
+
+      <a
+        v-if="job.email"
+        class="p-2 overflow-hidden bg-white border-2 border-green-500 rounded  hover:bg-green-500"
+        :href="'mailto:' + job.email + '?subject=' + job.title"
+        target="_black"
       >
-        <EditIcon />
-      </button>
-      <button
-        aria-label="Delete user"
-        class="p-1 focus:outline-none focus:shadow-outline hover:text-red-600"
-        @click="onDelete(job)"
-      >
-        <Trash2Icon />
-      </button>
+        Email Us
+      </a>
     </div>
+  </div>
+
+
   </li>
 </template>

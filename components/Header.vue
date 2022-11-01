@@ -1,18 +1,13 @@
-
-<script>
-export default {
-  name: "NuxtTutorial",
-};
-</script>
-<!-- Please remove this file from your project -->
 <template>
-  <div>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <div class="p-4">
-      <h1 class="text-3xl">Adventures Wanted</h1>
-    </div>
-  </div>
+
+    <header class="shrink-0 flex justify-between bg-white px-4 py-3">
+      <a class="text-2xl font-black tracking-tight" href="/">Adventurers Wanted</a>
+      <nav>
+        <a class="text-sm font-medium px-3 py-2 rounded-md hover:bg-gray-100" href="#">My Adventures</a>
+        <button class="ml-3">
+          <img class="h-9 w-9 inline rounded-full" src="	https://pbs.twimg.com/profile_images/1296425733020176385/tcO9mjan_400x400.jpg" alt="">
+        </button>
+      </nav>
+    </header>
+
 </template>

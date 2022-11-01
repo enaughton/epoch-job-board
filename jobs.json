@@ -1,14 +1,14 @@
 [
   {
     "title": "Save Hyrule",
-    "description": "Looking for somebody to come save the day! Please there are monsters all over place",
+    "description": "Looking for somebody to come save the day! Please there are monsters all over place. You will get a lovable fairy to help you on your quest.",
     "benefits": ["Unlimited breakable pots", "Gems", "other sidequests"],
     "email": "Lordof@Hyrule.gov"
   },
   {
     "title": "Mushroom Kingdom is under attack!",
-    "description": "I've never seen so many GOombas",
-    "benefits": ["Mushrooms", "Coins", "Fire Flowers"],
+    "description": "I've never seen so many Goombas. We have been invade by bad guys. Some big dude stole kidnapped Princess Peach. ",
+    "benefits": ["Mushrooms", "Coins", "Fire Flowers", "Maybe a Hero's reward"],
     "email": "MrToad@MushroomKingdom.gov"
   },
   {
@@ -29,11 +29,12 @@
   },
   {
     "title": "Aspiring mutant or true-kin",
-    "description": "Explore cavernous depths. Must be willing to occasionally avoid extradimensional psychic assasins.",
+    "description": "Explore cavernous depths. Must be willing to occasionally avoid extra-dimensional psychic assasins.",
     "benefits": [
       "Pay grade: 5-10 drams of water",
       "Ok with fungal infections",
-      "explore tombs"
+      "explore tombs",
+      "treasure"
     ],
     "email": "MayorOf@Qud.cave"
   }

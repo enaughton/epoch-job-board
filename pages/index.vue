@@ -6,21 +6,20 @@
       class="
         min-h-screen
         w-screen
-        flex flex-col
         pt-20
-        justify-center
-        items-center
-        md:items-start md:flex-row
+        grid
+        md:items-start md:flex-row lg:grid-cols-2
+
       "
     >
-      <div class="w-full max-w-md bg-green text-center px-3">
-        <p class="mb-2 text-gray-700 font-semibold font-sans tracking-wide">
-          Active Jobs
-        </p>
+   <div class="max-w-4xl mx-auto sm:px-6 lg:px-8">
+      <p class="mb-2 text-black font-semibold text-center font-sans tracking-wide">
+        Active Jobs
+      </p>
 
+      <Board>
         <Draggable
           tag="ul"
-          class="w-full max-w-md"
           ghost-class="moving-card"
           group="all-jobs"
           :list="users"
@@ -35,11 +34,13 @@
           >
           </JobList>
         </Draggable>
+      </Board>
       </div>
-      <div class="w-full max-w-md ml-12 text-center">
-        <p class="mb-2 text-gray-700 font-semibold font-sans tracking-wide">
+      <div class="">
+        <p class="mb-2 text-black font-semibold font-sans text-center tracking-wide">
           Completed Applications
         </p>
+        <Board>
         <Draggable
           tag="ul"
           ghost-class="moving-card"
@@ -51,14 +52,16 @@
             v-for="job in appliedJobs"
             :job="job"
             :key="job.title"
-            @on-edit="onEdit"
-            @on-delete="onDelete"
-          >
-          </JobList>
+
+         />
+
         </Draggable>
+        </Board>
       </div>
     </div>
-  </div>
+
+</div>
+
 </template>
 
 <script>
@@ -72,8 +75,7 @@ export default {
     return {
       jobs: jobs
     }
-  },
-  name: 'IndexPage',
+  }
 }
 </script>
-s
+
